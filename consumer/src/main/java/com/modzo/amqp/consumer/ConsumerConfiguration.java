@@ -20,7 +20,7 @@ class ConsumerConfiguration {
         return converter;
     }
 
-    public DefaultClassMapper classMapper() {
+    private DefaultClassMapper classMapper() {
         DefaultClassMapper classMapper = new DefaultClassMapper();
         Map<String, Class<?>> idClassMapping = new HashMap<>();
         idClassMapping.put("com.modzo.amqp.producer.ObjectMessageProducer$ObjectMessage", ObjectMessageConsumer.ObjectMessage.class);

@@ -1,6 +1,6 @@
-package com.modzo.amqp.producer;
+package com.modzo.amqp.consumer;
 
-class Queues {
+class ApplicationConstants {
     static final String HELLO = "helloQueue";
     static final String OBJECT = "objectQueue";
 }

@@ -21,7 +21,7 @@ public class HelloMessageProducer {
     @Scheduled(fixedDelay = 100L)
     public void produce() {
         String message = String.format("Say hello at %s", new Date());
-        this.rabbitTemplate.convertAndSend(Queues.HELLO, message);
+        this.rabbitTemplate.convertAndSend(Constants.HELLO, message);
         LOG.info("Send message: `{}`", message);
     }
 

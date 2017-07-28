@@ -27,8 +27,8 @@ class ObjectMessageProducer {
                 randomString(1000),
                 new Date()
         );
-        this.rabbitTemplate.convertAndSend(Queues.OBJECT, objectMessage);
-        LOG.info("Send object message {}", objectMessage);
+        this.rabbitTemplate.convertAndSend(Constants.OBJECT, objectMessage);
+        LOG.info("Sent object message {}", objectMessage);
     }
 
     static class ObjectMessage {

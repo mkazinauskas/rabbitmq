@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-@RabbitListener(queues = Queues.HELLO)
+@RabbitListener(queues = ApplicationConstants.HELLO)
 @Component
 class HelloMessageConsumer {
     private static final Logger LOG = LoggerFactory.getLogger(HelloMessageConsumer.class);
