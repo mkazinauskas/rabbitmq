@@ -1,4 +1,4 @@
-package com.modzo.amqp.consumer;
+package com.modzo.amqp.producer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ConsumerApplicationTests {
+public class ObjectMessageProducerApplicationTests {
 
 	@Test
 	public void contextLoads() {
